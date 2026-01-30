@@ -9,15 +9,10 @@ body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
 
-<<<<<<< HEAD
     /* Background image with dark overlay */
-=======
-    /* Background image */
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
     background: 
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), 
-        url("images/seamless-pattern-with-long-eyelashes-pink-background-simple-vector-illustration_511339-437.avif");
-
+        url("images/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +35,6 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
-<<<<<<< HEAD
 /* Profile Image */
 .profile-img {
     width: 110px;
@@ -52,8 +46,6 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
-=======
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
 h1 {
     margin-bottom: 10px;
     font-size: 24px;
@@ -64,11 +56,7 @@ p {
     color: #555;
 }
 
-<<<<<<< HEAD
 /* Social buttons */
-=======
-/* Buttons */
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
 .links a {
     display: flex;
     align-items: center;
@@ -91,10 +79,7 @@ p {
     transform: translateY(-3px);
 }
 
-<<<<<<< HEAD
 /* Social icons */
-=======
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
 .icon {
     width: 22px;
     height: 22px;
@@ -102,16 +87,10 @@ p {
 
 /* Mobile Optimization */
 @media (max-width: 480px) {
-<<<<<<< HEAD
-=======
-
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
     .container {
         padding: 30px 20px;
         border-radius: 16px;
     }
-<<<<<<< HEAD
-=======
 
     h1 {
         font-size: 20px;
@@ -119,5 +98,16 @@ p {
 
     .links a {
         font-size: 15px;
-        padding:
->>>>>>> 0261ecc4253894de539eeee04c81d83890b6ec93
+        padding: 12px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .profile-img {
+        width: 90px;
+        height: 90px;
+    }
+}
