@@ -11,7 +11,7 @@ body {
 
     /* Background image with dark overlay */
     background: 
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("images/background.png");
     background-size: cover;
     background-position: center;
@@ -26,8 +26,8 @@ body {
 /* Glass container */
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
     padding: 40px 30px;
     border-radius: 20px;
     width: 100%;
@@ -46,9 +46,11 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
+/* Heading */
 h1 {
     margin-bottom: 10px;
     font-size: 24px;
+    color: #222;
 }
 
 p {
@@ -56,13 +58,12 @@ p {
     color: #555;
 }
 
-/* Social buttons */
+/* Social Buttons */
 .links a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-
     text-decoration: none;
     background: #2a5298;
     color: white;
@@ -79,7 +80,7 @@ p {
     transform: translateY(-3px);
 }
 
-/* Social icons */
+/* Social Icons */
 .icon {
     width: 22px;
     height: 22px;
