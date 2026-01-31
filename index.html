@@ -7,12 +7,16 @@
 </head>
 <body>
 
+    <!-- Sparkle Canvas -->
+    <canvas id="sparkle-canvas"></canvas>
+
+    <!-- Animated Color Overlay -->
+    <div class="color-overlay"></div>
+
     <div class="container">
 
-        <!-- Profile Image -->
         <img src="images/profile.png" alt="Meko Profile" class="profile-img">
         
-
         <h1>Meko's Eyelashes ༗༗༗</h1>
         <p>Follow me on my social platforms 👇</p>
 
@@ -30,6 +34,54 @@
             </a>
         </div>
     </div>
+
+<script>
+const canvas = document.getElementById("sparkle-canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+function createParticles() {
+    for (let i = 0; i < 60; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 2 + 1,
+            speed: Math.random() * 0.5 + 0.2
+        });
+    }
+}
+
+function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach(p => {
+        p.y -= p.speed;
+        if (p.y < 0) {
+            p.y = canvas.height;
+            p.x = Math.random() * canvas.width;
+        }
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(255,255,255,0.8)";
+        ctx.fill();
+    });
+
+    requestAnimationFrame(animateParticles);
+}
+
+createParticles();
+animateParticles();
+
+window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+</script>
 
 </body>
 </html>
